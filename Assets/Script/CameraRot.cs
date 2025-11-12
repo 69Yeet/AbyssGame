@@ -1,14 +1,6 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
-//public class CameraRot : MonoBehaviour
-//{
-//    [SerializeField] private float angleCam;
-//    [SerializeField] private float distanceLook;
-//    [SerializeField] private GameObject target;
-
-
-//}
 
 public class CameraRot : MonoBehaviour
 {
@@ -28,10 +20,15 @@ public class CameraRot : MonoBehaviour
     public static float getRot { get { return currentRot; } }
     private Vector3 camPos;
     private Vector3 camRot;
+    private Vector3 camRotBuf;
+    private Vector3 camPosBuf;
+    private bool isOverriden;
     void Awake()
     {
         cam = Camera.main;
+        isOverriden = false;
     }
+
     public void CameraActions(InputAction.CallbackContext context)
     {
         cameraValues = context.ReadValue<Vector2>();
@@ -42,6 +39,10 @@ public class CameraRot : MonoBehaviour
 
     private void Position()
     {
+        if (isOverriden)
+        {
+            return;
+        }
         zoomCurrent += -cameraValues.y * zoomSpeed * Time.deltaTime;
         zoomCurrent = Mathf.Clamp(zoomCurrent, zoomMin, zoomMax);
         circleRad = zoomCurrent * Mathf.Cos(angleRad);
@@ -57,6 +58,10 @@ public class CameraRot : MonoBehaviour
 
     private void Rotation()
     {
+        if (isOverriden)
+        {
+            return;
+        }
         camRot = new Vector3(camAngle, Mathf.Rad2Deg * (((Mathf.PI * 2 * 3) / 4) - currentRot), 0);
     }
 
@@ -67,4 +72,38 @@ public class CameraRot : MonoBehaviour
         Rotation();
         cam.transform.rotation = Quaternion.Euler(camRot);
     }
+
+    public void OverrideCam(Vector3 overRot, Vector3 overPos)
+    {
+        StartCoroutine(TimedOverride(0.1f, overRot, overPos));
+    }
+
+    private IEnumerator TimedOverride(float timeSec, Vector3 overRot, Vector3 overPos)
+    {
+        yield return new WaitForSeconds(timeSec);
+        isOverriden = true;
+        camRotBuf = camRot;
+        camPosBuf = camPos;
+
+        camPos = overPos;
+        camRot = overRot;
+    }
+
+    public IEnumerator ReturnCamControl(float timeSec)
+    {
+        yield return new WaitForSeconds(timeSec);
+        camPos = camPosBuf;
+        camRot = camRotBuf;
+        isOverriden = false;
+    }
+
+    public void GoBack(InputAction.CallbackContext context)
+    {
+        if (isOverriden & context.performed)
+        {
+            StartCoroutine(ReturnCamControl(0.01f));
+        }
+    }
+
+
 }
