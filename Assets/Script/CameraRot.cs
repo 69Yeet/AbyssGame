@@ -23,10 +23,12 @@ public class CameraRot : MonoBehaviour
     private Vector3 camRotBuf;
     private Vector3 camPosBuf;
     private bool isOverriden;
+    private bool isConfessing;
     void Awake()
     {
         cam = Camera.main;
         isOverriden = false;
+        isConfessing = false;
     }
 
     public void CameraActions(InputAction.CallbackContext context)
@@ -80,8 +82,10 @@ public class CameraRot : MonoBehaviour
 
     private IEnumerator TimedOverride(float timeSec, Vector3 overRot, Vector3 overPos)
     {
-        yield return new WaitForSeconds(timeSec);
         isOverriden = true;
+
+        yield return new WaitForSeconds(timeSec);
+
         camRotBuf = camRot;
         camPosBuf = camPos;
 
@@ -99,11 +103,31 @@ public class CameraRot : MonoBehaviour
 
     public void GoBack(InputAction.CallbackContext context)
     {
-        if (isOverriden & context.performed)
+        if (isOverriden && !isConfessing && context.performed)
         {
             StartCoroutine(ReturnCamControl(0.01f));
         }
     }
 
+    public void StartConfession(Vector3 rot, Vector3 pos)
+    {
+        StartCoroutine(StartConTime(0.1f));
+    }
 
+    public void StopConfession()
+    {
+        StartCoroutine(StopConTime(0.1f));
+    }
+
+    private IEnumerator StopConTime(float timeSec)
+    {
+        yield return new WaitForSeconds(timeSec);
+        isConfessing = false;
+        isOverriden = false;
+    }
+    private IEnumerator StartConTime(float timeSec)
+    {
+        yield return new WaitForSeconds(timeSec);
+        isConfessing = true;
+    }
 }

@@ -6,11 +6,8 @@ public class ConfessionVariants : MonoBehaviour
     private bool isPhysicalDamage;
     private bool hasRelatedResponse;
     private bool getsRelatedResponse;
-    private bool getAbyss;
+    private bool wasAngered;
     [SerializeField] private GameObject model;
-
-    public delegate void Confession(int npc_abyssLevel);
-    public event Confession OnConfession;
 
     //public delegate void Choice(GameObject npc_model);
     //public event Choice OnChoice;
