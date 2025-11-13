@@ -10,7 +10,7 @@ public class ConfessInteract : MonoBehaviour
     private delegate void ConfessionInteract(Vector3 rot, Vector3 pos);
     private event ConfessionInteract OnConfessing;
 
-    public delegate void ConfessionEnd();
+    public delegate void ConfessionEnd(int num);
     public event ConfessionEnd OnConfessingEnd;
     private int confessionNum;
 
@@ -28,8 +28,13 @@ public class ConfessInteract : MonoBehaviour
         OnConfessing = null;
     }
 
-    public void GetNum(int pos)
+    public void SetNum(int pos)
     {
         confessionNum = pos;
+    }
+
+    private void OnDestroy()
+    {
+        OnConfessingEnd?.Invoke(confessionNum);
     }
 }

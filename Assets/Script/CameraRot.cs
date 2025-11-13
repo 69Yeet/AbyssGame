@@ -114,7 +114,7 @@ public class CameraRot : MonoBehaviour
         StartCoroutine(StartConTime(0.1f));
     }
 
-    public void StopConfession()
+    public void StopConfession(int num)
     {
         StartCoroutine(StopConTime(0.1f));
     }

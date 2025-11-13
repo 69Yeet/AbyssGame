@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ConfessorSpawner : MonoBehaviour
@@ -14,28 +15,29 @@ public class ConfessorSpawner : MonoBehaviour
         {
             queue.Enqueue(obj); 
         }
-
+        InitialSpawn();
 
     }
-    private void ConfessorSpawn(GameObject confessor, Transform position)
+    private void ConfessorSpawn(GameObject confessor, Transform position, int num)
     {
-        ConfessInteract instance = Instantiate(confessor, position).GetComponent<ConfessInteract>();
+        ConfessInteract instance = Instantiate(confessor, position.position, position.rotation).GetComponent<ConfessInteract>();
+        instance.SetNum(num);
         instance.OnConfessingEnd += ContinueSpawn;
     }
 
-    public void ContinueSpawn()
+    public void ContinueSpawn(int pos)
     {
         if (queue.Count > 0)
         {
-            ConfessorSpawn(queue.Dequeue(), confessionalPos[0]);
+            ConfessorSpawn(queue.Dequeue(), confessionalPos[pos], pos);
         }
     }
 
     private void InitialSpawn()
     {
-        foreach (Transform pos in confessionalPos)
+        foreach (var pos in confessionalPos.Select((value, i) => (value, i)))
         {
-            ConfessorSpawn(queue.Dequeue(), pos);
+            ConfessorSpawn(queue.Dequeue(), pos.value, pos.i);
         }
     }
 }
