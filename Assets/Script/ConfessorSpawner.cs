@@ -6,6 +6,8 @@ public class ConfessorSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] confessor;
     [SerializeField] private Transform[] confessionalPos;
+    [SerializeField] private Transform sinnerSpawn;
+
     private Queue<GameObject> queue;
 
     void Awake()

@@ -13,11 +13,21 @@ public class ConfessInteract : MonoBehaviour
     public delegate void ConfessionEnd(int num);
     public event ConfessionEnd OnConfessingEnd;
     private int confessionNum;
+    [SerializeField]private bool sinnerIn;
 
-    ConfessionVariants variant;
+    [SerializeField] private Variants variant;
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.tag == "Sinner")
+        {
+
+        }
+
+        if (!sinnerIn)
+        {
+            return;
+        }
         CameraRot camInstance = other.gameObject.GetComponentInParent<CameraRot>();
         PriestStats priestInstance = other.gameObject.GetComponent<PriestStats>();
         OnConfessing += camInstance.StartConfession;

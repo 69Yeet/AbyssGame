@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class ConfessionVariants : MonoBehaviour
+[CreateAssetMenu(fileName = "Variants", menuName = "Scriptable Objects/Variants")]
+public class Variants : ScriptableObject
 {
     [SerializeField] private int abyssLevel;
     [SerializeField] private bool isPhysicalDamage;
@@ -8,13 +9,4 @@ public class ConfessionVariants : MonoBehaviour
     [SerializeField] private bool getsRelatedResponse;
     [SerializeField] private bool wasAngered;
     [SerializeField] private GameObject model;
-
-    //public delegate void Choice(GameObject npc_model);
-    //public event Choice OnChoice;
-
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    print("Collision");
-    //    OnChoice?.Invoke(model);
-    //}
 }
