@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -41,5 +42,11 @@ public class ConfessorSpawner : MonoBehaviour
         {
             ConfessorSpawn(queue.Dequeue(), pos.value, pos.i);
         }
+    }
+
+    private IEnumerator SpawnNPC(GameObject p_npc, float timeSec)
+    {
+        yield return new WaitForSeconds(timeSec);
+        Instantiate(p_npc, sinnerSpawn.position, sinnerSpawn.rotation);
     }
 }
