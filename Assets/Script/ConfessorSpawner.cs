@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Hierarchy;
 using UnityEngine;
 
 public class ConfessorSpawner : MonoBehaviour
@@ -9,6 +10,7 @@ public class ConfessorSpawner : MonoBehaviour
     [SerializeField] private Transform[] confessionalPos;
     [SerializeField] private Transform sinnerSpawn;
     [SerializeField] private GameObject dialogue;
+    [SerializeField] private GameObject endGame;
 
     private Queue<GameObject> queue;
 
@@ -30,6 +32,7 @@ public class ConfessorSpawner : MonoBehaviour
         instance.OnConfessingEnd += ContinueSpawn;
         instance.OnConfessing += dialogue.GetComponentInChildren<Dialogue>().StartConfessing;
         instance.OnConfessingEnd += dialogue.GetComponentInChildren<Dialogue>().EndConfessing;
+        instance.OnConfessingEnd += IsWin;
         instance.SetCanva(dialogue);
     }
 
@@ -46,6 +49,14 @@ public class ConfessorSpawner : MonoBehaviour
         foreach (var pos in confessionalPos.Select((value, i) => (value, i)))
         {
             ConfessorSpawn(queue.Dequeue(), pos.value, pos.i);
+        }
+    }
+
+    private void IsWin(int num, priestEvent priest)
+    {
+        if (queue.Count == 0 && GetComponentInChildren<PriestStats>().GetStack() == 4)
+        {
+            endGame.GetComponent<EndGame>().WinFunction();
         }
     }
 
