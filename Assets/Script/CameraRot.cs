@@ -22,8 +22,8 @@ public class CameraRot : MonoBehaviour
     private Vector3 camRot;
     private Vector3 camRotBuf;
     private Vector3 camPosBuf;
-    private bool isOverriden;
-    private bool isConfessing;
+    [SerializeField]private bool isOverriden;
+    [SerializeField]private bool isConfessing;
 
     [SerializeField] private GameObject confessionalInChild;
     void Awake()

@@ -24,6 +24,7 @@ public class ConfessInteract : MonoBehaviour
     private Transform sinnerSpawn;
 
     private bool priestRelated;
+    [SerializeField] private GameObject canvas;
 
     void Awake()
     {
@@ -59,6 +60,8 @@ public class ConfessInteract : MonoBehaviour
 
         OnConfessing?.Invoke(Vector3.zero, confessionalLoc, variant.scriptObj);
         OnConfessing = null;
+        canvas.GetComponent<Dialogue>().SetDestroy(gameObject);
+
     }
 
     public void SetNum(int pos)
@@ -83,5 +86,10 @@ public class ConfessInteract : MonoBehaviour
     public void SetSinnerSpawn(Transform spawnPos)
     {
         sinnerSpawn = spawnPos;
+    }
+
+    public void SetCanva(GameObject canva)
+    {
+        canvas = canva;
     }
 }

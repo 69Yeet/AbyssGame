@@ -14,33 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueChoices:
   - line: "Bonjour petit papa pr\xEAtre, je viens te voir car j'ai bobo au visage"
-    dictAdd: 0200000003000000
+    dictAdd: 0100000002000000
     abyssLvl: 0
   - line: "J'ai autre chose \xE0 faire que de g\xE9rer tes probl\xE8mes de gamine."
-    dictAdd: 04000000
+    dictAdd: 03000000
     abyssLvl: 0
   - line: "Oui bien s\xFBr, mon enfant, qu'est ce qu'il y a."
-    dictAdd: 05000000
+    dictAdd: 04000000
     abyssLvl: 0
   - line: "Oh d\xE9sol\xE9 de d\xE9ranger, je vais partir..  Snif..."
     dictAdd: 00000000
     abyssLvl: 0
   - line: "Owww.. Mercii, \xE7a fait des jours ou quand j'essaye de dodo je sens
       des boutons sortir de mon pif."
-    dictAdd: 06000000
+    dictAdd: 05000000
     abyssLvl: 0
   - line: "Ma moman m'a dit que c'\xE9tait les petits planctons et que je devais
       arr\xEAter d'en manger, mais je l'a crois pas !"
-    dictAdd: 07000000
+    dictAdd: 06000000
     abyssLvl: 0
   - line: "J'ai quoi petit p\xE8re ?"
-    dictAdd: 0800000009000000
+    dictAdd: 0700000008000000
     abyssLvl: 0
   - line: Tu n'as rien, c'est juste une petite allergie.
-    dictAdd: 0a000000
+    dictAdd: 09000000
     abyssLvl: 0
   - line: "Si tu viens juste pour me dire \xE7a, c'est pas la peine"
-    dictAdd: 0b000000
+    dictAdd: 0a000000
     abyssLvl: 0
   - line: "Oh merci beaucoup ! Je montrerait \xE0 ma moman que je ne suis pas qu'une
       petite nenette !"

@@ -55,7 +55,7 @@ public class LineEditor : EditorWindow
                         //Debug.Log(strAddr[0]);
                         for (int i = 0; i < numChoices; i++)
                         {
-                            arrayAddress.Add(int.Parse(strAddr[i]));
+                            arrayAddress.Add(int.Parse(strAddr[i]) - 1);
                         }
                         //Debug.Log(arrayAddress[0]);
                         choice.dictAdd = arrayAddress;
