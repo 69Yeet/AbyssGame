@@ -25,10 +25,11 @@ public class ConfessorSpawner : MonoBehaviour
     {
         ConfessInteract instance = Instantiate(confessor, position.position, position.rotation).GetComponent<ConfessInteract>();
         instance.SetNum(num);
+        instance.SetSinnerSpawn(sinnerSpawn);
         instance.OnConfessingEnd += ContinueSpawn;
     }
 
-    public void ContinueSpawn(int pos)
+    public void ContinueSpawn(int pos, priestEvent param)
     {
         if (queue.Count > 0)
         {
@@ -44,9 +45,4 @@ public class ConfessorSpawner : MonoBehaviour
         }
     }
 
-    private IEnumerator SpawnNPC(GameObject p_npc, float timeSec)
-    {
-        yield return new WaitForSeconds(timeSec);
-        Instantiate(p_npc, sinnerSpawn.position, sinnerSpawn.rotation);
-    }
 }

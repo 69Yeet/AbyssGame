@@ -8,6 +8,7 @@ public class ConfessionVariants : MonoBehaviour
     [SerializeField] private bool getsRelatedResponse;
     [SerializeField] private bool wasAngered;
     [SerializeField] private Texture2D texture;
+    [SerializeField] private GameObject model;
 
     //public delegate void Choice(GameObject npc_model);
     //public event Choice OnChoice;

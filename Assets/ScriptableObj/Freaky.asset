@@ -17,4 +17,5 @@ MonoBehaviour:
   hasRelatedResponse: 0
   getsRelatedResponse: 0
   wasAngered: 0
-  model: {fileID: 0}
+  texture: {fileID: 0}
+  model: {fileID: 5210743912545532827, guid: b2079eb08bbb7494b8c650b901240f00, type: 3}
