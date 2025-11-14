@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29bb1eeb236183c468ff1beb2e9b41a9, type: 3}
+  m_Name: Freaky1
+  m_EditorClassIdentifier: 
+  dialogueChoices:
+  - line: "Bonjour mon p\xE8re, je viens ici vous demandez.. Est-ce que vous vous
+      \xEAtes d\xE9j\xE0 touch\xE9 ?"
+    dictAdd: 0100000002000000
+    abyssLvl: 0
+  - line: Ce n'est pas un lieu pour vous ici.
+    dictAdd: 04000000
+    abyssLvl: 0
+  - line: ".. Comment \xE7a ?"
+    dictAdd: 04000000
+    abyssLvl: 0
+  - line: Je sais que tu veux pas l'assumer, tu veux pas l'assumer hein, je reviendrais..
+    dictAdd: 00000000
+    abyssLvl: 0
+  - line: "Toucher... Toucher toujours plus, qu'elle que soit l'esp\xE8ce, qu'elle
+      que soit la mati\xE8re.."
+    dictAdd: 05000000
+    abyssLvl: 0
+  - line: "Depuis qu'il m'a touch\xE9, j'ai envie de faire de m\xEAme \xE0 tout ce
+      qui se pr\xE9sente \xE0 moi.."
+    dictAdd: 0600000007000000
+    abyssLvl: 0
+  - line: 'Qui est "il" ? '
+    dictAdd: 08000000
+    abyssLvl: 0
+  - line: Partez vite d'ici.
+    dictAdd: 09000000
+    abyssLvl: 0
+  - line: "Oh il est int\xE9ress\xE9 hein.. Int\xE9ress\xE9.. Je vous en dirait plus
+      la prochaine fois.."
+    dictAdd: 00000000
+    abyssLvl: 1
+  - line: "Qu'est ce que vous \xEAtes pas dr\xF4le, je reviendrais quoi qu'il arrive.."
+    dictAdd: 00000000
+    abyssLvl: 0

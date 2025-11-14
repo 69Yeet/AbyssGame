@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29bb1eeb236183c468ff1beb2e9b41a9, type: 3}
+  m_Name: Freaky2
+  m_EditorClassIdentifier: 
+  dialogueChoices:
+  - line: "Je peux plus me contr\xF4ler.. La b\xE9n\xE9diction m'a \xE9t\xE9 accord\xE9
+      mais je n'arrive pas \xEAtre dans l'action.."
+    dictAdd: 0100000002000000
+    abyssLvl: 0
+  - line: Vous aurez rien de ma part, partez.
+    dictAdd: 03000000
+    abyssLvl: 0
+  - line: "La b\xE9n\xE9diction ? "
+    dictAdd: 05000000
+    abyssLvl: 0
+  - line: "Tout le monde dans cette \xE9glise go\xFBtera \xE0 mes piquaux ils vont
+      si aimer.."
+    dictAdd: 04000000
+    abyssLvl: 0
+  - line: "Vous pourrez pas plus me contr\xF4ler.. Vous pouvez PAS me CONTROLER..."
+    dictAdd: 00000000
+    abyssLvl: 0
+  - line: "Oui la b\xE9n\xE9diction.. Tu peux pas comprendre, tu as des tentacules,
+      tu as tout ce qu'il faut.."
+    dictAdd: 06000000
+    abyssLvl: 0
+  - line: "Il doit me donner plus.. Je dois revenir \xE0 cette endroit.. Pour enfin
+      go\xFBter au vrai plaisir."
+    dictAdd: 070000000800000009000000
+    abyssLvl: 0
+  - line: "Partez de cette \xE9glise."
+    dictAdd: 0a000000
+    abyssLvl: 0
+  - line: "J'esp\xE8re que cet endroit vous donnera la force."
+    dictAdd: 0b000000
+    abyssLvl: 0
+  - line: Va te branler ailleurs, poisson putride
+    dictAdd: 0c000000
+    abyssLvl: 0
+  - line: Elle sera un lieu de jouissance croyez moi..
+    dictAdd: 00000000
+    abyssLvl: 0
+  - line: "Oh oui.. Continuez.. Comme \xE7a je retrouverai la force pour Jewel.."
+    dictAdd: 00000000
+    abyssLvl: 1
+  - line: Il suffit juste de demander; je pourrais le faire dans ta chambre..
+    dictAdd: 00000000
+    abyssLvl: 2

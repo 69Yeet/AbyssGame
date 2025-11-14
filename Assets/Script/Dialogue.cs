@@ -100,6 +100,9 @@ public class Dialogue : MonoBehaviour
     public void ButtonChoose3()
     {
         index = dialogue.dialogueChoices[index].dictAdd[2];
+        index = dialogue.dialogueChoices[index].dictAdd[0];
+
+        ContinueDialogue();
         DeActivateButton();
     }
 

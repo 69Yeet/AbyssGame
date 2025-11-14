@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29bb1eeb236183c468ff1beb2e9b41a9, type: 3}
+  m_Name: Pope1
+  m_EditorClassIdentifier: 
+  dialogueChoices:
+  - line: "Ah vous voil\xE0 enfin. Le r\xE9veil a \xE9t\xE9 rude sous la veille du
+      bon Seigneur n'est ce pas ?"
+    dictAdd: 01000000
+    abyssLvl: 0
+  - line: "Le repos est n\xE9cessaire \xE0 tous, et c'est pour cel\xE0 que vous \xEAtes
+      l\xE0."
+    dictAdd: 02000000
+    abyssLvl: 0
+  - line: "Chacun d'entre nous est victime de maux, et c'est \xE0 vous de leur d\xE9livrer
+      la mis\xE9ricorde."
+    dictAdd: 03000000
+    abyssLvl: 0
+  - line: "Le Miraculeux exige que chaque jour, la R\xE9demption a pu \xEAtre accord\xE9
+      \xE0 ses damn\xE9s."
+    dictAdd: 04000000
+    abyssLvl: 0
+  - line: "Que le Tout-Puissant soit avec vous, et gare \xE0 pas vous m\xEAme sombrer."
+    dictAdd: 0500000006000000
+    abyssLvl: 0
+  - line: Je ferai de mon mieux pour ne pas sombrer
+    dictAdd: 00000000
+    abyssLvl: 0
+  - line: Je ferai de mon mieux pour remplir ma mission
+    dictAdd: 00000000
+    abyssLvl: 0

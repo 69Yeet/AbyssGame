@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29bb1eeb236183c468ff1beb2e9b41a9, type: 3}
+  m_Name: Poisson1
+  m_EditorClassIdentifier: 
+  dialogueChoices:
+  - line: "Par tout les puissants, p\xE8re, je dois vous parlez d'une chose terrible."
+    dictAdd: 0100000002000000
+    abyssLvl: 0
+  - line: "Il n'y a qu'un seul puissant, blasph\xE8mateur"
+    dictAdd: 03000000
+    abyssLvl: 0
+  - line: 'Qu''il y a t''il ? '
+    dictAdd: 04000000
+    abyssLvl: 0
+  - line: "Sachez vous rendre \xE0 l'\xE9vidence avant qu'il soit trop tard.. Vous
+      n'aurez bient\xF4t plus de chance."
+    dictAdd: 00000000
+    abyssLvl: 0
+  - line: Une chose terrible se passe.. Il semble reprendre ses forces..
+    dictAdd: 05000000
+    abyssLvl: 0
+  - line: "Les abysses ressurgissent des profondeurs, et m'ont accord\xE9 une r\xE9demption..
+      Une \xE9volution.."
+    dictAdd: 0600000007000000
+    abyssLvl: 0
+  - line: "Comment \xE7a une \xE9volution..?"
+    dictAdd: 08000000
+    abyssLvl: 0
+  - line: Le Miraculeux interdit cette pratique.
+    dictAdd: 09000000
+    abyssLvl: 0
+  - line: "Ne t'inqui\xE8te pas, ce lieu est d\xE9j\xE0 suspectible de te le montrer..
+      A tr\xE8s vite.."
+    dictAdd: 00000000
+    abyssLvl: 1
+  - line: "Ce charlatan deviendra mis\xE9rable face aux pouvoirs des abysses.. Vous
+      le verrez.."
+    dictAdd: 00000000
+    abyssLvl: 0

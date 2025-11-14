@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29bb1eeb236183c468ff1beb2e9b41a9, type: 3}
+  m_Name: Etoile1
+  m_EditorClassIdentifier: 
+  dialogueChoices:
+  - line: "Bonjour p\xE8re, j'esp\xE8re que vous.. Au pire, salut rien \xE0 foutre
+      de la politesse."
+    dictAdd: 0100000002000000
+    abyssLvl: 0
+  - line: "Si c'est comme \xE7a, part d'ici."
+    dictAdd: 03000000
+    abyssLvl: 0
+  - line: Qu'est ce qui t'arrive ?
+    dictAdd: 04000000
+    abyssLvl: 0
+  - line: "Vous allez voir ce qui va vous arrivez un jour crustac\xE9 \xE9clat\xE9."
+    dictAdd: 00000000
+    abyssLvl: 0
+  - line: En fait rien, j'ai enfin eu la force que je voulais, donc je voulais vous
+      provoquer.
+    dictAdd: 05000000
+    abyssLvl: 0
+  - line: "Et comme je l'avais pr\xE9vu, vous allez rien faire, car vous avez trop
+      peur de vous faire sicailler."
+    dictAdd: 060000000700000008000000
+    abyssLvl: 0
+  - line: "La violence n'a aucune raison d'\xEAtre ici."
+    dictAdd: 09000000
+    abyssLvl: 0
+  - line: "Je suis l\xE0 pour t'aider, non pour t'affronter."
+    dictAdd: 0a000000
+    abyssLvl: 0
+  - line: "C'est moi qui va vous bannir de cette soci\xE9t\xE9."
+    dictAdd: 0b000000
+    abyssLvl: 0
+  - line: "Le nouveau dieu va vous remplacer de toute fa\xE7on, vous \xEAtes fichu."
+    dictAdd: 00000000
+    abyssLvl: 0
+  - line: "C'est bien reste un bon toutou du Dieu d\xE9chu, bient\xF4t il te jetera."
+    dictAdd: 00000000
+    abyssLvl: 1
+  - line: "J'attend de voir \xE7a, je vais te faire bouffer tes tiges visqueux."
+    dictAdd: 00000000
+    abyssLvl: 2
