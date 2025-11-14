@@ -19,3 +19,4 @@ MonoBehaviour:
   wasAngered: 0
   texture: {fileID: 0}
   model: {fileID: 5210743912545532827, guid: b2079eb08bbb7494b8c650b901240f00, type: 3}
+  scriptObj: {fileID: 11400000, guid: 2b210bcf88a8aba4d8db871faadc9843, type: 2}

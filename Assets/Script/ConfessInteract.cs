@@ -8,8 +8,8 @@ public class ConfessInteract : MonoBehaviour
 {
     [SerializeField] private Vector3 confessionalLoc;
 
-    private delegate void ConfessionInteract(Vector3 rot, Vector3 pos);
-    private event ConfessionInteract OnConfessing;
+    public delegate void ConfessionInteract(Vector3 rot, Vector3 pos, DialogueChoice scriptObj);
+    public event ConfessionInteract OnConfessing;
 
     public delegate void ConfessionEnd(int num, priestEvent param);
     public event ConfessionEnd OnConfessingEnd;
@@ -57,7 +57,7 @@ public class ConfessInteract : MonoBehaviour
         OnConfessingEnd += camInstance.StopConfession;
         OnConfessingEnd += priestInstance.IncreaseAbyss;
 
-        OnConfessing?.Invoke(Vector3.zero, confessionalLoc);
+        OnConfessing?.Invoke(Vector3.zero, confessionalLoc, variant.scriptObj);
         OnConfessing = null;
     }
 

@@ -8,6 +8,7 @@ public class ConfessorSpawner : MonoBehaviour
     [SerializeField] private GameObject[] confessor;
     [SerializeField] private Transform[] confessionalPos;
     [SerializeField] private Transform sinnerSpawn;
+    [SerializeField] private GameObject dialogue;
 
     private Queue<GameObject> queue;
 
@@ -27,6 +28,8 @@ public class ConfessorSpawner : MonoBehaviour
         instance.SetNum(num);
         instance.SetSinnerSpawn(sinnerSpawn);
         instance.OnConfessingEnd += ContinueSpawn;
+        instance.OnConfessing += dialogue.GetComponentInChildren<Dialogue>().StartConfessing;
+        instance.OnConfessingEnd += dialogue.GetComponentInChildren<Dialogue>().EndConfessing;
     }
 
     public void ContinueSpawn(int pos, priestEvent param)

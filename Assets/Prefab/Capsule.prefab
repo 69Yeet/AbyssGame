@@ -151,6 +151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4039da1db6dea4e46aa7de6bb5255df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  confessionalLoc: {x: 0, y: 0, z: 0}
+  confessionalLoc: {x: 0, y: 0, z: 10}
   sinnerIn: 0
   variant: {fileID: 11400000, guid: 12a8b670a8dbc6d4abba4ba94e629340, type: 2}

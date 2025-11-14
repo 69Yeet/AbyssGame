@@ -6,7 +6,7 @@ public class Interact : MonoBehaviour
     private bool isColliding;
     private CameraRot camInstance;
 
-    private delegate void OverrideCam(Vector3 camRot, Vector3 camPos);
+    private delegate void OverrideCam(Vector3 camRot, Vector3 camPos, DialogueChoice scriptObj);
     private event OverrideCam OnOverrideCam;
 
     [SerializeField] private Transform camTransform;
@@ -34,7 +34,7 @@ public class Interact : MonoBehaviour
     {
         if (context.performed & isColliding)
         {
-            OnOverrideCam?.Invoke(camTransform.eulerAngles, camTransform.position);
+            OnOverrideCam?.Invoke(camTransform.eulerAngles, camTransform.position, null);
             OnOverrideCam = null;
         }
 

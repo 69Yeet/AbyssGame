@@ -24,6 +24,8 @@ public class CameraRot : MonoBehaviour
     private Vector3 camPosBuf;
     private bool isOverriden;
     private bool isConfessing;
+
+    [SerializeField] private GameObject confessionalInChild;
     void Awake()
     {
         cam = Camera.main;
@@ -75,7 +77,7 @@ public class CameraRot : MonoBehaviour
         cam.transform.rotation = Quaternion.Euler(camRot);
     }
 
-    public void OverrideCam(Vector3 overRot, Vector3 overPos)
+    public void OverrideCam(Vector3 overRot, Vector3 overPos, DialogueChoice scriptObj)
     {
         StartCoroutine(TimedOverride(0.1f, overRot, overPos));
     }
@@ -109,7 +111,7 @@ public class CameraRot : MonoBehaviour
         }
     }
 
-    public void StartConfession(Vector3 rot, Vector3 pos)
+    public void StartConfession(Vector3 rot, Vector3 pos, DialogueChoice scriptObj)
     {
         StartCoroutine(StartConTime(0.1f));
     }
@@ -129,5 +131,15 @@ public class CameraRot : MonoBehaviour
     {
         yield return new WaitForSeconds(timeSec);
         isConfessing = true;
+    }
+
+    private void SetConfessionalActive()
+    {
+        confessionalInChild.SetActive(true);
+    }
+
+    public void SetConfessionalInactive()
+    {
+        confessionalInChild.SetActive(false);
     }
 }

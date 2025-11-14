@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Variants", menuName = "Scriptable Objects/Variants")]
@@ -10,4 +11,5 @@ public class Variants : ScriptableObject
     public bool wasAngered;
     public Texture2D texture;
     public GameObject model;
+    public DialogueChoice scriptObj;
 }
