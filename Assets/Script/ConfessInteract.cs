@@ -92,4 +92,9 @@ public class ConfessInteract : MonoBehaviour
     {
         canvas = canva;
     }
+
+    public void SetAffliction(priestEvent affliction)
+    {
+        priestAffliction = affliction;
+    }
 }

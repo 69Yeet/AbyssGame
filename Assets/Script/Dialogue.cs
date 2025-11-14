@@ -136,6 +136,10 @@ public class Dialogue : MonoBehaviour
         if (isNullFun == 0)
         {
             isNull = true;
+            priestEvent stats = new priestEvent();
+            stats.abyssDamager = dialogue.dialogueChoices[index].abyssLvl;
+            Debug.Log(dialogue.dialogueChoices[index].abyssLvl);
+            toDestroy.GetComponent<ConfessInteract>().SetAffliction(stats);
         }
         if (addressCount == 1)
         {
