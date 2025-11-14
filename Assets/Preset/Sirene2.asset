@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29bb1eeb236183c468ff1beb2e9b41a9, type: 3}
+  m_Name: Sirene2
+  m_EditorClassIdentifier: 
+  dialogueChoices:
+  - line: "Je suis de retour, je dois vraiment me d\xE9barasser de ses branchies
+      cass\xE9es."
+    dictAdd: 0100000002000000
+    abyssLvl: 0
+  - line: Je ne peut rien faire pour toi
+    dictAdd: 03000000
+    abyssLvl: 0
+  - line: "Qu'est ce qui les abime r\xE9ellement ?"
+    dictAdd: 05000000
+    abyssLvl: 0
+  - line: "Bon okay, si tu ne peux pas aider une sir\xE8ne en d\xE9tresse, tu peux
+      aider PERSONNE !"
+    dictAdd: 04000000
+    abyssLvl: 0
+  - line: Tu es aussi inutile qu'un champ de corail blanc.
+    dictAdd: 00000000
+    abyssLvl: 0
+  - line: "Je ne sais pas.. Peut-\xEAtre l'alimentation.. Le soleil.. Ma peau.."
+    dictAdd: 06000000
+    abyssLvl: 0
+  - line: Ou bien lui..
+    dictAdd: 070000000800000009000000
+    abyssLvl: 0
+  - line: '"Lui" ?'
+    dictAdd: 0a000000
+    abyssLvl: 0
+  - line: "C'est s\xFBrement une combinaison de raison."
+    dictAdd: 0b000000
+    abyssLvl: 0
+  - line: "Juste tu parles trop, affaire r\xE9solu."
+    dictAdd: 0c000000
+    abyssLvl: 0
+  - line: "Oui lui.. Je sais pas si il est l\xE0, ou si il est d\xE9j\xE0 parti mais
+      je dois fuir.. Bye."
+    dictAdd: 00000000
+    abyssLvl: 0
+  - line: "Oui .. S\xFBrement.. Et s\xFBrement que vous \xEAtes toujours aussi inutile."
+    dictAdd: 00000000
+    abyssLvl: 1
+  - line: "Utilise tes tentacules pour t'\xE9touffer connard."
+    dictAdd: 00000000
+    abyssLvl: 2

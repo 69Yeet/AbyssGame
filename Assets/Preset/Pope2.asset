@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29bb1eeb236183c468ff1beb2e9b41a9, type: 3}
+  m_Name: Pope2
+  m_EditorClassIdentifier: 
+  dialogueChoices:
+  - line: "Bien le bonjour, vous avez pu faire que le seigneur vous a demand\xE9."
+    dictAdd: 0100000002000000
+    abyssLvl: 0
+  - line: "Oui bien s\xFBr."
+    dictAdd: 03000000
+    abyssLvl: 0
+  - line: "Beaucoup \xE9tait corrumpu.."
+    dictAdd: 03000000
+    abyssLvl: 0
+  - line: Content de l'entendre, celui au profondeur serait content de l'entendre.
+    dictAdd: 04000000
+    abyssLvl: 0
+  - line: "Vous avez diffus\xE9 sa volont\xE9, n'est ce pas ?"
+    dictAdd: 040000000500000006000000
+    abyssLvl: 0
+  - line: "Quel volont\xE9 ..? Quel \xEAtre des profondeurs ..?"
+    dictAdd: 08000000
+    abyssLvl: 0
+  - line: Tout pour le seigneur..
+    dictAdd: 09000000
+    abyssLvl: 0
+  - line: "Je serai d\xE9vou\xE9 pour ce dernier"
+    dictAdd: 0a000000
+    abyssLvl: 0
+  - line: Oh, je vois que vous avez pas compris.. Quel dommage, j'avais foi en vous.
+    dictAdd: 00000000
+    abyssLvl: 0
+  - line: "C'est \xE7a que je voulais entendre.."
+    dictAdd: 00000000
+    abyssLvl: 1
+  - line: "Vous serez gracement r\xE9compens\xE9.."
+    dictAdd: 00000000
+    abyssLvl: 2

@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29bb1eeb236183c468ff1beb2e9b41a9, type: 3}
+  m_Name: Meduse3
+  m_EditorClassIdentifier: 
+  dialogueChoices:
+  - line: J'en peut plus... J'EN PEUT PLUS....
+    dictAdd: 0100000002000000
+    abyssLvl: 0
+  - line: Qu'est ce qui t'arrive ma pauvre ?
+    dictAdd: 03000000
+    abyssLvl: 0
+  - line: "J'ai pas le temps avec \xE7a."
+    dictAdd: 04000000
+    abyssLvl: 0
+  - line: Je vais partir.. Je vais partir.. ON VA TOUS PARTIR.
+    dictAdd: 00000000
+    abyssLvl: 0
+  - line: "\xE7a pousse.. \xE7a n'arr\xEAte pas de pousser.. Je n'arrive pas \xE0
+      les contr\xF4ler.. "
+    dictAdd: 04000000
+    abyssLvl: 0
+  - line: "Piti\xE9 p\xE8re, faites ce que ce soit \xE9ph\xE9m\xE8re, j'en peut plus
+      de tout \xE7a.."
+    dictAdd: 060000000700000008000000
+    abyssLvl: 0
+  - line: "Je peux h\xE9las rien faire pour toi."
+    dictAdd: 09000000
+    abyssLvl: 0
+  - line: "Mon p\xE8re prendra soin de toi"
+    dictAdd: 0a000000
+    abyssLvl: 0
+  - line: Suicide-toi, maintenant.
+    dictAdd: 0b000000
+    abyssLvl: 0
+  - line: Personne peut m'aider.. Plus personne peut venir...
+    dictAdd: 00000000
+    abyssLvl: 0
+  - line: "Merci.. J'esp\xE8re revoir ma moman.."
+    dictAdd: 00000000
+    abyssLvl: 1
+  - line: ... D..d'accord.. Adieu..
+    dictAdd: 00000000
+    abyssLvl: 2

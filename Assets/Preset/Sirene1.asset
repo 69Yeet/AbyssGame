@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29bb1eeb236183c468ff1beb2e9b41a9, type: 3}
+  m_Name: Sirene1
+  m_EditorClassIdentifier: 
+  dialogueChoices:
+  - line: "Bien le bonjour p\xE8re, je m'excuse pour ma pr\xE9sence, j'ai des probl\xE8mes..
+      de branchies.."
+    dictAdd: 0100000002000000
+    abyssLvl: 0
+  - line: "Est-ce que j'ai l'air d'\xEAtre une Oc\xE9abutamol ?"
+    dictAdd: 03000000
+    abyssLvl: 0
+  - line: "Je t'\xE9coute, prend ton temps pour respirer"
+    dictAdd: 04000000
+    abyssLvl: 0
+  - line: "Est-ce que j'ai l'air d'une c\xE2tin avec ses r\xE8gles ? Vas'y je d\xE9gage
+      d'ici."
+    dictAdd: 00000000
+    abyssLvl: 0
+  - line: "Merci mon p\xE8re, j'ai eu du mal \xE0 venir ne serait-ce pour venir ici."
+    dictAdd: 05000000
+    abyssLvl: 0
+  - line: "J'ai du apprendre \xE0 mes d\xE9pend \xE0 nager rapidement, mes branchies
+      sont.. sont..."
+    dictAdd: 0600000007000000
+    abyssLvl: 0
+  - line: Ils sont..?
+    dictAdd: 08000000
+    abyssLvl: 0
+  - line: "A votre d\xE9pend ?"
+    dictAdd: 09000000
+    abyssLvl: 0
+  - line: "Oh c'est bon, ferme la c'est moi qui parle, c'est \xE0 cause de vous que
+      je suis comme \xE7a la."
+    dictAdd: 0a000000
+    abyssLvl: 0
+  - line: "Oui \xE0 mes d\xE9pends, quoi tu es devenu trop s\xE9nile pour comprendre
+      une pauvre sir\xE8ne ??"
+    dictAdd: 0a000000
+    abyssLvl: 0
+  - line: "Bon bref, donnez moi un rem\xE8de et vite, je commence \xE0 perdre mon
+      temps avec vous."
+    dictAdd: 0b0000000c000000
+    abyssLvl: 0
+  - line: Allez perdre votre temps ailleurs.
+    dictAdd: 0d000000
+    abyssLvl: 0
+  - line: "J'essayerai de vous trouver des m\xE9thodes"
+    dictAdd: 0e000000
+    abyssLvl: 0
+  - line: Allez vous faire foutre. Adieu.
+    dictAdd: 00000000
+    abyssLvl: 0
+  - line: "J'esp\xE8re bien, je reviendrai pour voir si vous serez \xE0 mes nageoires."
+    dictAdd: 00000000
+    abyssLvl: 0
