@@ -30,6 +30,7 @@ public class ConfessorSpawner : MonoBehaviour
         instance.OnConfessingEnd += ContinueSpawn;
         instance.OnConfessing += dialogue.GetComponentInChildren<Dialogue>().StartConfessing;
         instance.OnConfessingEnd += dialogue.GetComponentInChildren<Dialogue>().EndConfessing;
+        instance.SetCanva(dialogue);
     }
 
     public void ContinueSpawn(int pos, priestEvent param)
