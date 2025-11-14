@@ -83,7 +83,6 @@ public class Dialogue : MonoBehaviour
     {
         index = dialogue.dialogueChoices[index].dictAdd[0];
         index = dialogue.dialogueChoices[index].dictAdd[0];
-        //Debug.Log(index);
         ContinueDialogue();
         DeActivateButton();
     }
@@ -129,9 +128,7 @@ public class Dialogue : MonoBehaviour
     private void ContinueDialogue()
     {
         int addressCount = dialogue.dialogueChoices[index].dictAdd.Count;
-        //Debug.Log(addressCount);
         int isNullFun = dialogue.dialogueChoices[index].dictAdd[0];
-        //Debug.Log(isNullFun);
         if (isNull)
         {
             Destroy(toDestroy);
@@ -144,7 +141,6 @@ public class Dialogue : MonoBehaviour
         {
             line = dialogue.dialogueChoices[index].line;
             index = dialogue.dialogueChoices[index].dictAdd[0];
-            //Debug.Log(index);
             StartCoroutine(TypeLine());
         }
         else if (addressCount > 1)
@@ -155,30 +151,6 @@ public class Dialogue : MonoBehaviour
                 buttons[i].GetComponentInChildren<TextMeshProUGUI>().text = dialogue.dialogueChoices[dialogue.dialogueChoices[index].dictAdd[i]].line;
             }
         }
-        //Debug.Log(index);
-        /*int addressCount = dialogue.dialogueChoices[index].dictAdd.Count;
-        Debug.Log(addressCount);
-        int isNull = dialogue.dialogueChoices[index].dictAdd[0];
-        if (isNull == 0)
-        {
-            Destroy(toDestroy);
-        }
-        if (addressCount == 1)
-        {
-            //Debug.Log(index);
-            index = dialogue.dialogueChoices[index].dictAdd[0];
-            StartCoroutine(TypeLine());
-        }
-        else if (addressCount > 1)
-        {
-            for (int i = 0; i < addressCount; i++)
-            {
-                buttons[i].SetActive(true);
-                buttons[i].GetComponentInChildren<TextMeshProUGUI>().text = dialogue.dialogueChoices[dialogue.dialogueChoices[index].dictAdd[i]].line;
-            }
-        }
-
-        line = dialogue.dialogueChoices[index].line;*/
     }
 
     public void SetDestroy(GameObject go)

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a811b9f57135a64295ba5f6ae9bd502, type: 3}
-  m_Name: Freaky
+  m_Name: Meduse
   m_EditorClassIdentifier: 
   abyssLevel: 0
   isPhysicalDamage: 0
@@ -18,5 +18,5 @@ MonoBehaviour:
   getsRelatedResponse: 0
   wasAngered: 0
   texture: {fileID: 0}
-  model: {fileID: 3938718592313491325, guid: a1b8f5ee19c7d6749b95d3a3f21b938b, type: 3}
-  scriptObj: {fileID: 11400000, guid: 0c6e3dd5e79ce294eae8264e20fe4afa, type: 2}
+  model: {fileID: 6463779615898770416, guid: 33ee1eb955bf8704ca1bf32bd2fdb8f3, type: 3}
+  scriptObj: {fileID: 11400000, guid: a10911ff9c91f6d4b8edd26b606af61c, type: 2}
